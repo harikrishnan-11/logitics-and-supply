@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Stackly Logistics and Supply Chain Solutions</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo-box">
+                <img src="./src/logo/Untitled design-compressed (1).webp" alt="">
+            </div>
+            <div class="nav-links">
+                <a href="./home.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./service.html">Service</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+            <div class="login-btn">
+                <a href="./login.html">
+                    <Button title="Login to Tract Your order and History">Login</Button>
+                </a>
+            </div>
+        </nav>
+        <div class="mobile-nav">
+            <div class="mobile-menu">
+                <a href="./home.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./service.html">Service</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+            <div class="mobile-login-btn" id="mobile-login-btn">
+                <a href="./login.html">
+                    <Button title="Login to Tract Your order and History">Login</Button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="title">
+                <h2>Smart Logistics <br>Seamless Growth</h2>
+                <div class="sub-title">
+                    <p><i class="fa-solid fa-bolt"></i>Your Growth,<span class="gray-text">
+                        Our Logistics
+                    </span></p>
+                    <p><i class="fa-solid fa-location-dot"></i>Nationwide Reach,<span class="gray-text">Local Care</span></p>
+                </div>
+                <div class="hero-btns">
+                    <a href="./contact.html"><button>Get a Free Quots <span><i class="fa-solid fa-chevron-right"></i></span></button></a>
+                    <a href="./service.html"><button>Services</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const hum = document.getElementById("hamburger");
+        const mob = document.querySelector(".mobile-nav");
+
+        hum.addEventListener("click", () => {
+            hum.classList.toggle("active");
+            mob.classList.toggle("active");
+        });
+
+    </script>
+
+
+</body>
+
+</html>
